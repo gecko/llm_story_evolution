@@ -1,0 +1,19 @@
+# Coding Rules and Guidelines
+
+## Naming Conventions
+- Use snake_case for variable and function names
+- Use CamelCase for class names
+- Use UPPERCASE_WITH_UNDERSCORES for constants
+
+## Code Formatting
+- Follow PEP 8 guidelines
+- Use 4 spaces per indentation level
+- Limit lines to a maximum of 140 characters
+
+## Documentation
+- Write docstrings for all public modules, functions, and classes
+- Use reStructuredText format for docstrings
+
+## Testing
+- Write unit tests for all public methods
+- Aim for at least 80% code coverage

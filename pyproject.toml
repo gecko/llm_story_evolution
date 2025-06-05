@@ -1,0 +1,34 @@
+[project]
+name = "llm-fixpoints"
+version = "0.1.0"
+description = "Exploring LLM story fixpoints"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "ollama",
+    "torch (>=2.6.0,<3.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "sentence-transformers (>=4.1.0,<5.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.6,<3.0.0)",
+    "umap-learn (>=0.5.7,<0.6.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+
+[tool.poetry.dependencies]
+torch = {source = "pytorch-gpu"}
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
